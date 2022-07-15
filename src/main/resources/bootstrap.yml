@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: admin-service
+  jmx:
+    default-domain: admin-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: 1234
+      username: user
+  main:
+    allow-bean-definition-overriding: true #i dont remember why but i think there is a bug with spring cloud and OAuth2ClientContext
+
+security:
+  jwt:
+    public-key: classpath:public.txt          

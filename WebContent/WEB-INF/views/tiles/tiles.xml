@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base-definition"
+                template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header"
+                       value="/WEB-INF/views/tiles/template/defaultHeader.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/views/tiles/template/defaultFooter.jsp"/>
+    </definition>
+    <definition name="base2-definition"
+                template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header"
+                       value="/WEB-INF/views/tiles/template/defaultHeader.jsp"/>
+        <put-attribute name="menu"
+                       value="/WEB-INF/views/tiles/template/defaultMenu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/views/tiles/template/defaultFooter.jsp"/>
+    </definition>
+    <definition name="test-definition"
+                template="/WEB-INF/views/tiles/layouts/testLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header"
+                       value="/WEB-INF/views/tiles/template/testHeader.jsp"/>
+        <put-attribute name="menu"
+                       value="/WEB-INF/views/tiles/template/testMenu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/views/tiles/template/testFooter.jsp"/>
+    </definition>
+    <definition name="base1-definition"
+                template="/WEB-INF/views/tiles/layouts/loginDefaultLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="menu" value=""/>
+        <put-attribute name="body" value=""/>
+    </definition>
+    <definition name="popup-definition"
+                template="/WEB-INF/views/tiles/layouts/popupLayout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value=""/>
+    </definition>
+    <definition extends="base-definition" name="myprofileadmin">
+        <put-attribute name="title" value="My User Profile"/>
+        <put-attribute name="body" value="/WEB-INF/views/MyProfileAdmin.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="viewpersonalinfo">
+        <put-attribute name="title" value="View Personal Information"/>
+        <put-attribute name="body" value="/WEB-INF/views/ViewPersonalInformation.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="updatepersonalinfo">
+        <put-attribute name="title" value="Update Personal Information"/>
+        <put-attribute name="body" value="/WEB-INF/views/UpdatePersonalInformation.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="changepwdadmin">
+        <put-attribute name="title" value="Change Password"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/ChangePasswordAdmin.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="list">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="body" value="/WEB-INF/views/Dashboard.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="registration">
+        <put-attribute name="title" value="Add New USer"/>
+        <put-attribute name="body" value="/WEB-INF/views/registration.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="newpages">
+        <put-attribute name="title" value="New Page"/>
+        <put-attribute name="body" value="/WEB-INF/views/builder/newpage.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="queryterminal">
+        <put-attribute name="title" value="Query Terminal"/>
+        <put-attribute name="body" value="/WEB-INF/views/builder/queryterminal.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="dbtables">
+        <put-attribute name="title" value="Database Tables"/>
+        <put-attribute name="body" value="/WEB-INF/views/builder/dbtables.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="ftpclient">
+        <put-attribute name="title" value="FTP Client"/>
+        <put-attribute name="body" value="/WEB-INF/views/builder/ftpclient.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="feedback">
+        <put-attribute name="title" value="Feedback Form"/>
+        <put-attribute name="body" value="/WEB-INF/views/feedback.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="faq">
+        <put-attribute name="title" value="FAQ"/>
+        <put-attribute name="body" value="/WEB-INF/views/faq.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="contactus">
+        <put-attribute name="title" value="Contact Us"/>
+        <put-attribute name="body" value="/WEB-INF/views/contactus.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="careerguidance">
+        <put-attribute name="title" value="Career Guidance"/>
+        <put-attribute name="body" value="/WEB-INF/views/careerguidance.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="noticeboardads">
+        <put-attribute name="title" value="Notice Board Ads"/>
+        <put-attribute name="body" value="/WEB-INF/views/noticeboardads.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="contactus">
+        <put-attribute name="title" value="Contact Us"/>
+        <put-attribute name="body" value="/WEB-INF/views/contactus.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="defaultheader">
+        <put-attribute name="title" value="Default Header"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/EditHeader.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="defaultfooter">
+        <put-attribute name="title" value="Default Footer"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/EditFooter.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="mainmenu">
+        <put-attribute name="title" value="Add Main Menu"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/AddMainMenu.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="submenu">
+        <put-attribute name="title" value="Add Sub Menu"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/AddSubMenu.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="addtemplate">
+        <put-attribute name="title" value="Add Template"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/AddTemplate.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="viewtemplate">
+        <put-attribute name="title" value="View Templates"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/builder/ViewTemplates.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="registrationsuccess">
+        <put-attribute name="title" value="Confirmation"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/registrationsuccess.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="viewuserlist">
+        <put-attribute name="title" value="View Users"/>
+        <put-attribute name="body" value="/WEB-INF/views/ViewUserList.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="accessDenied">
+        <put-attribute name="title" value="Access Denied"/>
+        <put-attribute name="body" value="/WEB-INF/views/accessDenied.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="upload">
+        <put-attribute name="title" value="Upload"/>
+        <put-attribute name="body" value="/WEB-INF/views/productForm.jsp"/>
+    </definition>
+    <definition extends="base1-definition" name="login">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="body" value="/WEB-INF/views/jsp/LoginPage.jsp"/>
+    </definition>
+    <definition extends="base1-definition" name="sso">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="body" value="/WEB-INF/views/jsp/SsoPage.jsp"/>
+    </definition>
+    <definition extends="popup-definition" name="autoclosepopup">
+        <put-attribute name="title" value="View Meters List"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/views/AutoClosingWindow.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="addResumeDef">
+        <put-attribute name="title" value="Add Resume"/>
+        <put-attribute name="body" value="/WEB-INF/views/AddResumeaddResume.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="viewResumesDef">
+        <put-attribute name="title" value="View Resumes"/>
+        <put-attribute name="body" value="/WEB-INF/views/ViewResumesviewResumes.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="addJobHistoryDef">
+        <put-attribute name="title" value="Add Job History"/>
+        <put-attribute name="body" value="/WEB-INF/views/AddJobHistoryaddJobHistory.jsp"/>
+    </definition>
+    <definition extends="base-definition" name="viewJobHistoryDef">
+        <put-attribute name="title" value="View Job History"/>
+        <put-attribute name="body" value="/WEB-INF/views/ViewJobHistoryviewJobHistory.jsp"/>
+    </definition>
+</tiles-definitions>
